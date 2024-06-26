@@ -1,0 +1,33 @@
+name: localization_sample
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # TODO 1: add the following dependencies
+  # allows translations and changing locale
+  flutter_localizations:
+    sdk: flutter
+  # save language prefs
+  shared_preferences: ^2.2.3
+  # restarts app after changing languages
+  flutter_phoenix: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  # TODO 2: add language assets and fill them with the required translations
+  assets:
+    - lang/ar.json
+    - lang/en.json
